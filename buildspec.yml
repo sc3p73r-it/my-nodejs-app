@@ -5,3 +5,8 @@ phases:
     commands:
       - echo "Starting the build phase"
       - node app.js
+
+artifacts:
+  files:
+    - "**/*"
+  discard-paths: no
