@@ -1,13 +1,6 @@
 version: 0.2
 
 phases:
-  install:
-    runtime-versions:
-      nodejs: v18
-  pre_build:
-    commands:
-      - echo Build started on `date`
-      - npm install
   build:
     commands:
       - echo Build Not Required
@@ -15,7 +8,3 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-
-artifacts:
-  files:
-    - "**/*"
